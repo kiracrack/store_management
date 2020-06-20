@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF0498D6-CA7C-4C1C-8026-53DAA024C067}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SariSari_Store.My.MyApplication</StartupObject>
+    <RootNamespace>SariSari_Store</RootNamespace>
+    <AssemblyName>Store Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Store Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Store Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.0.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmSavingsLedger.Designer.vb">
+      <DependentUpon>frmSavingsLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSavingsLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectionSetup.Designer.vb">
+      <DependentUpon>frmConnectionSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectionSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGLSettings.Designer.vb">
+      <DependentUpon>frmGLSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGLSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStakeholder.Designer.vb">
+      <DependentUpon>frmStakeholder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStakeholder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinancialCapital.Designer.vb">
+      <DependentUpon>frmFinancialCapital.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinancialCapital.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneralSummary.Designer.vb">
+      <DependentUpon>frmGeneralSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneralSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditLedger.Designer.vb">
+      <DependentUpon>frmCreditLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJournalMode.Designer.vb">
+      <DependentUpon>frmJournalMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJournalMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditAccount.Designer.vb">
+      <DependentUpon>frmCreditAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassbookLedger.Designer.vb">
+      <DependentUpon>frmPassbookLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassbookLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreAccount.Designer.vb">
+      <DependentUpon>frmStoreAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStoreAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItems.Designer.vb">
+      <DependentUpon>frmItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJournalEntry.Designer.vb">
+      <DependentUpon>frmJournalEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJournalEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ConectionSetup.vb" />
+    <Compile Include="Module\DataGridViewPrinter.vb" />
+    <Compile Include="Module\Library.vb" />
+    <Compile Include="Module\securityLevel.vb" />
+    <Compile Include="Module\SercureData.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmSavingsLedger.resx">
+      <DependentUpon>frmSavingsLedger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectionSetup.resx">
+      <DependentUpon>frmConnectionSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGLSettings.resx">
+      <DependentUpon>frmGLSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStakeholder.resx">
+      <DependentUpon>frmStakeholder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinancialCapital.resx">
+      <DependentUpon>frmFinancialCapital.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneralSummary.resx">
+      <DependentUpon>frmGeneralSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditLedger.resx">
+      <DependentUpon>frmCreditLedger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJournalMode.resx">
+      <DependentUpon>frmJournalMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditAccount.resx">
+      <DependentUpon>frmCreditAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassbookLedger.resx">
+      <DependentUpon>frmPassbookLedger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStoreAccount.resx">
+      <DependentUpon>frmStoreAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItems.resx">
+      <DependentUpon>frmItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJournalEntry.resx">
+      <DependentUpon>frmJournalEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook--pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-continue-090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
